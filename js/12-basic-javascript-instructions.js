@@ -16,3 +16,7 @@ let grandTotal = subTotal + shipping;
 // Get the element that has an id of greeting and replace the content with welcome message
 let elGreeting = document.getElementById("greeting");
 elGreeting.textContent = welcomeMessage;
+
+// Get the element that has an id of userSign and update its contents
+let elSign = document.getElementById("userSign");
+elSign.textContent = sign;
