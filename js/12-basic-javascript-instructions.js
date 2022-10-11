@@ -24,3 +24,7 @@ elSign.textContent = sign;
 // Get the element that has an id of tiles and update its contents
 let elTiles = document.getElementById("tiles");
 elTiles.textContent = tiles;
+
+// Get the element that has as id of subTotal and update is content
+let elSubTotal = document.getElementById("subTotal");
+elSubTotal.textContent = "$" + subTotal;
