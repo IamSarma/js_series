@@ -13,4 +13,15 @@ which helps protect the scope of variables */
       return offerRate;
     },
   };
+
+  // Write out the hotel name, standard rate and the special rate
+  let hotelName, roomRate, specialRate;
+
+  hotelName = document.getElementById("hotelName");
+  roomRate = document.getElementById("roomRate");
+  specialRate = document.getElementById("specialRate");
+
+  hotelName.textContent = hotel.name;
+  roomRate.textContent = "$" + hotel.roomRate;
+  specialRate.textContent = "$" + hotel.offerPrice();
 })();
