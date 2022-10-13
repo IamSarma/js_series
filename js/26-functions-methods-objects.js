@@ -24,4 +24,11 @@ which helps protect the scope of variables */
   hotelName.textContent = hotel.name;
   roomRate.textContent = "$" + hotel.roomRate;
   specialRate.textContent = "$" + hotel.offerPrice();
+
+  // Part 2: Calculate and write out the expiry details for the offer
+  let expMessage, today, elOfferEnds;
+
+  function offerExpires(today) {
+    let weekFromToday, day, date, month, year, dayNames, monthNames;
+  }
 })();
