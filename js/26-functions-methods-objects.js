@@ -61,5 +61,10 @@ which helps protect the scope of variables */
     date = weekFromToday.getDate();
     month = monthNames[weekFromToday.getMonth()];
     year = weekFromToday.getFullYear();
+    // Create the message
+    expMessage = "Offer expires next ";
+    expMessage += day + " <br />(" + date + " " + month + " " + year + ")";
+
+    return expMessage;
   }
 })();
