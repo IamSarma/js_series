@@ -32,5 +32,29 @@ which helps protect the scope of variables */
     let weekFromToday, day, date, month, year, dayNames, monthNames;
     // Calculate 7 days time
     weekFromToday = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    // Create arrays to hold names of days and months
+    dayNames = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
   }
 })();
