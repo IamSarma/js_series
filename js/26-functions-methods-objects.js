@@ -30,5 +30,7 @@ which helps protect the scope of variables */
 
   function offerExpires(today) {
     let weekFromToday, day, date, month, year, dayNames, monthNames;
+    // Calculate 7 days time
+    weekFromToday = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
   }
 })();
