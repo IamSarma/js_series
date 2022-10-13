@@ -67,4 +67,10 @@ which helps protect the scope of variables */
 
     return expMessage;
   }
+
+  today = new Date();
+  elOfferEnds = document.getElementById("offerEnds");
+  elOfferEnds.innerHTML = offerExpires(today);
+
+  // Finish the immediately invoked function expression (IIFE)
 })();
