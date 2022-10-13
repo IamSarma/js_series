@@ -56,5 +56,10 @@ which helps protect the scope of variables */
       "November",
       "December",
     ];
+    // Collect the parts of the date to show on the page
+    day = dayNames[weekFromToday.getDay()];
+    date = weekFromToday.getDate();
+    month = monthNames[weekFromToday.getMonth()];
+    year = weekFromToday.getFullYear();
   }
 })();
