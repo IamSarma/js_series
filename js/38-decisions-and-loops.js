@@ -5,7 +5,7 @@ let msg = "";
 
 if (operator === "addition") {
   while (i < 11) {
-    msg += i + " + " + table + " = " + (i + table) + "<br /.";
+    msg += i + " + " + table + " = " + (i + table) + "<br />";
     i++;
   }
 } else {
@@ -14,3 +14,6 @@ if (operator === "addition") {
     i++;
   }
 }
+
+let elBlackBoard = document.getElementById("blackboard");
+elBlackBoard.innerHTML = msg;
