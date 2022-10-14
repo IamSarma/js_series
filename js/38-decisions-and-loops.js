@@ -9,4 +9,8 @@ if (operator === "addition") {
     i++;
   }
 } else {
+  while (i < 11) {
+    msg += i + " x " + table + " = " + i * table + "<br />";
+    i++;
+  }
 }
