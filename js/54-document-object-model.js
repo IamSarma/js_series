@@ -13,3 +13,6 @@ let newItemStart = document.createElement("li");
 let newTextStart = document.createTextNode("kale");
 newItemStart.appendChild(newTextStart);
 list.insertBefore(newItemStart, list.firstChild);
+
+// Get all li elements
+let listItems = document.querySelectorAll("li");
