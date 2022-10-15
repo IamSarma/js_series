@@ -21,3 +21,10 @@ let listItems = document.querySelectorAll("li");
 for (let i = 0; i < listItems.length; i++) {
   listItems[i].className = "cool";
 }
+
+// Add number of items in the list to the heading
+let heading = document.querySelector("h2");
+let headingText = heading.firstChild.nodeValue;
+let totalItems = listItems.length;
+let newHeading = headingText + "<span>" + totalItems + "</span>";
+heading.innerHTML = newHeading;
