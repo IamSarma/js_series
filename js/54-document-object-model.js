@@ -7,3 +7,9 @@ let newItemLast = document.createElement("li");
 let newTextLast = document.createTextNode("cream");
 newItemLast.appendChild(newTextLast);
 list.appendChild(newItemLast);
+
+// Add new item to start of list
+let newItemStart = document.createElement("li");
+let newTextStart = document.createTextNode("kale");
+newItemStart.appendChild(newTextStart);
+list.insertBefore(newItemStart, list.firstChild);
