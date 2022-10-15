@@ -16,3 +16,8 @@ list.insertBefore(newItemStart, list.firstChild);
 
 // Get all li elements
 let listItems = document.querySelectorAll("li");
+
+// Add a class of 'cool' to all list items
+for (let i = 0; i < listItems.length; i++) {
+  listItems[i].className = "cool";
+}
