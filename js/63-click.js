@@ -8,3 +8,11 @@ let elNote = document.createElement("div");
 elNote.setAttribute("id", "note");
 elNote.innerHTML = msg;
 document.body.appendChild(elNote);
+
+// Close button functionality
+function dismissNote() {
+  document.body.removeChild(elNote);
+}
+
+let elClose = document.getElementById("close");
+elClose.addEventListener("click", dismissNote, false);
