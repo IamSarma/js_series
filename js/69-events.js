@@ -4,6 +4,16 @@ let noteInput, noteName, textEneterd, target;
 noteName = document.getElementById("noteName");
 noteInput = document.getElementById("noteInput");
 
+// writelabel function
+function writeLabel(e) {
+  if (!e) {
+    e = window.event;
+  }
+  target = e.target;
+  textEneterd = target.value;
+  noteName.textContent = textEneterd;
+}
+
 // recordContorls function
 function recordContorls(e) {
   if (!e) {
