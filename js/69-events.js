@@ -28,6 +28,12 @@ function record(target) {
   target.textContent = "stop";
 }
 
+// stop function
+function stop(target) {
+  target.setAttribute("data-state", "record");
+  target.textContent = "record";
+}
+
 // Adding event listeners
 document.addEventListener(
   "click",
