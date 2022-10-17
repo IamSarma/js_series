@@ -1,5 +1,5 @@
 // Declaring variables and storing elements
-let noteInput, noteName, textEneterd, target;
+let noteInput, noteName, textEntered, target;
 
 noteName = document.getElementById("noteName");
 noteInput = document.getElementById("noteInput");
@@ -10,12 +10,12 @@ function writeLabel(e) {
     e = window.event;
   }
   target = e.target;
-  textEneterd = target.value;
-  noteName.textContent = textEneterd;
+  textEntered = target.value;
+  noteName.textContent = textEntered;
 }
 
-// recordContorls function
-function recordContorls(e) {
+// recordControls function
+function recorderControls(e) {
   if (!e) {
     e = window.event;
   }
