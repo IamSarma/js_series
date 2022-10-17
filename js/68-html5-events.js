@@ -4,3 +4,12 @@ function setup() {
 }
 
 window.addEventListener("DOMContentLoaded", setup, false);
+
+window.addEventListener(
+  "beforeunload",
+  function (event) {
+    let message = "You have changes that have not been saved...";
+    (event || this.window.event).returnValue = message;
+  },
+  false
+);
