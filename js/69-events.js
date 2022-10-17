@@ -22,6 +22,12 @@ function recordContorls(e) {
   }
 }
 
+// record function
+function record(target) {
+  target.setAttribute("data-state", "stop");
+  target.textContent = "stop";
+}
+
 // Adding event listeners
 document.addEventListener(
   "click",
